@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+
+  <title>Soap Recipe Search</title>
+  <meta name="description" content="Moja pierwsza aplikacja zrobiona przy użyciu frameworka AngularJS." >
+  <meta name="keywords" content="farmework, angularjs, app">
+  
+  <link rel="stylesheet" type="text/css" href="style.css" >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body ng-app="FirstNgApp" ng-controller="firstNgController">
+
+  <section class="intro">
+    <div class="inner">
+	  <div class="content">
+	    <h1>Let's Make Some Soap</h1>
+	    <h3>Find the best recipes for free</h3>
+		<a class="btn" href="#">Search recipe</a>
+	  </div>
+	</div>
+  </section>
+
+  <div class="well" ng-repeat="fir in first">
+	<h3>{{ fir.address }}</h3>
+	<p><strong>Type: </strong>{{ fir.type }}</p>
+	<p><strong>Description: </strong>{{ fir.description }}</p>
+	<p><strong>Price: </strong>{{ fir.price | currency}}</p>
+  </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+<script src="app.js"></script>
+<script src="scripts/firstNgcontroller.js"></script>
+<script src="scripts/firstNgFactory.js"></script>
+</html>
