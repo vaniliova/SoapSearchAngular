@@ -23,20 +23,25 @@
 	  </div>
 	</div>
   </section>
+
   <div id="jump"></div>
 
-  <div class="well" ng-repeat="fir in first">
-	<h3>{{ fir.address }}</h3>
-	<p><strong>Type: </strong>{{ fir.type }}</p>
-	<p><strong>Description: </strong>{{ fir.description }}</p>
-	<p><strong>Price: </strong>{{ fir.price | currency}}</p>
+  <div class="well" ng-repeat="recipe in recipes">
+    <h3>{{ recipe.type }}</h3>
+    <p><strong>Oil type: </strong>{{ recipe.oil }}</p>
+    <p><strong>Lye type: </strong>{{ recipe.lye }}</p>
+    <p><strong>Price per bar: </strong>{{ recipe.price | currency }}</p>
+    <p><strong>Recipe: </strong>{{ recipe.recipe }}</p>
   </div>
+  
+ 
+  
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
 <script src="app.js"></script>
-<script src="scripts/firstNgcontroller.js"></script>
+<script src="scripts/firstNgController.js"></script>
 <script src="scripts/firstNgFactory.js"></script>
 </html>
