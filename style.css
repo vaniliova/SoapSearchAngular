@@ -35,14 +35,14 @@ html, body {
 .content h1 {
 	font-family: 'Raleway', sans-serif;
 	color: #f9f3f4;
-	text-shadow: 0px 0px 800px #500;
+	text-shadow: 0px 0px 400px #200;
 	font-size: 500%;
 	font-weight: 800;
 }
 
 .content h3 {
 	font-family: 'Raleway', sans-serif;
-	text-shadow: 0px 0px 800px #500;
+	text-shadow: 0px 0px 400px #200;
 	font-size: 200%;
 	margin-bottom: 50px;
 
@@ -67,16 +67,21 @@ html, body {
 	text-decoration: none;
 }
 
-/*p {
-	font-size: 160%;
-	text-align: justify;
-	line-height: 210%;
-	font-family: sans-serif;
-	margin: 3%;
-	text-indent: 5%;
-	padding: 10px;
-}*/
+.navbar-default {
+	background-color: #8B5CD6 !important;
+}
 
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#footer {
+	
+	text-align: center;
+	background: #DBD1F0;
+	padding: 20px;
+}
 @media screen and (max-width: 768px) {
 	
 	.content h1 {
@@ -87,8 +92,5 @@ html, body {
 		font-size: 100%;
 		padding: 7px 15px;
 	}
-	/*p {
-		font-size: 100%;
-		line-height: 160%;
-	}*/
+
 }

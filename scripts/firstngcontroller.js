@@ -2,13 +2,11 @@ angular
   .module('FirstNgApp')
   .controller('firstNgController', function($scope, firstNgFactory) {
 
-	  	$scope.recipes;
+	  	$scope.recipes = firstNgFactory.getFirstNg();
 
-	  	firstNgFactory.getFirstNg.then(function successCallback(data) {
-	  		$scope.recipes = data.data;
-	  	}, function errorCallback(error) {
-	  		console.log(error.json);
-	  	
-
+	 //  Code for firstNgFilter.js	
+	 // $scope.priceInfo {
+  // 			min: 0,
+  // 			max: 3
+		// };
    });
-
